@@ -21,8 +21,8 @@ E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are y
 - selanjutnya instal lxc dengan sudo apt-get install lxc lxctl lxc-templates net-tools
   ![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/a3ea00e1-9229-463b-9a75-ce0e66a92829)
 
-- sudo lxc-checkconfig (pastikan semua enable
-  ![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/f4536003-1710-4483-8fc0-b311edc20a42)
+- sudo lxc-checkconfig (pastikan semua enable)
+![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/8840af95-7f1a-40bd-b236-5f808665f7be)
 
 - command sudo ls /usr/share/lxc/templates/ untuk melihat ada file apa saja
   ![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/3cdde7f7-b3d7-4d76-ae5c-59572bd03f1a)
