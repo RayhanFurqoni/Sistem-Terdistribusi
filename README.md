@@ -1,4 +1,4 @@
-# Sistem-Terdistribusi
+![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/887c41f5-449f-4dae-98c4-d899a1a954d5)![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/aa76a0ba-23d3-4a57-bea8-2ea475010982)# Sistem-Terdistribusi
 **step pertama** download ubuntu 22.04.3 LTS di microsoft store
 - memberi nama dan password
   
@@ -50,6 +50,45 @@ E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are y
   ![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/0a016167-d6ed-4e74-84a6-e41d3b80134c)
 - cek apakah nginx sudah berhasil dengan command "sudo nginx -t"
 ![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/23e40f6a-0ecc-4a4b-b82c-ac3f435821a4)
+
+- reload nginx dengan "sudo nginx -s reload"
+- masuk ke file cd /var/www/html/
+- membuat salinan copy dengan " sudo cp index.nginx-debian.html index.html"
+
+  ![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/afc3ad1b-15a0-4b19-9e64-9668418f537b)
+
+- merubah isi dari file index.html dengan "sudo nano index.html"
+
+  ![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/021529c2-9b24-4f62-a4c8-653fe2c1dfdb)
+
+- Buka notepad administrator, dan cari file hosts di C:\Windows\System32\drivers\etc
+- setelah membuka file hosts, tambahkan file baru
+
+![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/363873d0-3f00-4c9d-b13a-631a709ed6cb)
+
+- buka browser dan ketikkan sister.local
+
+  ![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/6d32241e-b830-4cad-8678-30968b9c08a8)
+
+- membuat LXC dengan nama ubuntu_php5.6 (dengan ubuntu 16.04) dan ubuntu_php7.4 (dengan ubuntu 18.04)
+microservice 1 = sudo lxc-create -n microservice1 -t download -- --dist ubuntu --release focal --arch amd64 --force-cache --server images.linuxcontainers.org
+
+microservice 2 = sudo lxc-create -n microservice2 -t download -- --dist ubuntu --release bionic --arch amd64 --force-cache --server images.linuxcontainers.org
+
+-kemudian start microservicenya kita, kita mulai dari microservice2 dengan command " sudo lxc-start -n microservice2"
+- sudo lxc-attach -n microservice2
+- buat password untuk microservice2
+- 
+![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/4eed202e-056f-4f0e-8a41-2f28beb56117)
+
+
+- kemudian cek ip nya dengan command "ip a"
+
+  ![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/c6275e8d-2b6c-4eac-bf8d-5916c80df74f)
+
+- 
+
+
 
 
   
