@@ -117,7 +117,34 @@ microservice 2 = sudo lxc-create -n microservice2 -t download -- --dist ubuntu -
 - dan terakhir update microservice1 dan microservice2 dengan "apt upgrade -y"
 
 **MICROSERVICE ABOUTUS**
--
+- install nginx dengan "sudo apt install nginx nginx-extras"
+- setelah menginstall, masuk ke folder var/www/html dan disana ada file index.nginx-debian.html
+- masuk ke file nya dan ganti isi about us sesuai yang diinginkan(microservice2)
+-  kemudian apt install curl
+-  cek apakah sudah terganti dengan "curl localhost"
+
+![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/459d4f7e-028e-44ce-b0fb-4361e9fda5db)
+
+- 
+
+  ![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/c491dec0-fe14-4ad1-ad84-e0d90182e91f)
+**MICROSERVICE BLOG**
+- install nginx dengan "sudo apt install nginx nginx-extras"
+- setelah menginstall, masuk ke folder var/www/html dan disana ada file index.nginx-debian.html
+- masuk ke file nya dan ganti isi blog sesuai yang diinginkan(microservice1)
+![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/f56b1b45-f0b4-4c69-931a-d5fd0d0931b8)
+- kemudian apt install curl
+- cek apakah sudah terganti dengan "curl localhost"
+  
+![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/4629ebe5-4ddf-4011-82bf-f149faf617c7)
+
+**kembali ke ubuntu utama**
+- masuk ke folder /etc/nginx/sites-enabled/
+- masuk kefile dan membuat link untuk ke microservice1 jika ingin kemenu blog, dan jika ingin ke aboutus link ke microservice2 dengan "sudo nano sister.local"
+
+![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/acf1606d-ce4d-4a9a-89b4-403931adf2af)
+
+-  
 
 
 
