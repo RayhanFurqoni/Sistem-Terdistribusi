@@ -86,7 +86,38 @@ microservice 2 = sudo lxc-create -n microservice2 -t download -- --dist ubuntu -
 
   ![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/c6275e8d-2b6c-4eac-bf8d-5916c80df74f)
 
-- 
+  - kemudian install nano "apt install nano"
+
+   ![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/e0b1d7c1-56c8-405c-94c9-09c812787589)
+
+  -  rubah file 10-lxc.yaml dengan "sudo nano /etc/netplan/10-lxc.yaml"
+  -  rubah ip file 10-lxc.yaml dan yang lainnya seperti gambar dibawah
+
+  ![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/fc3d39c4-ed11-4568-893e-838ceefba76b)
+
+  -  kemudian refresh dengan "sudo netplan apply"
+
+ ![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/b05d4954-2517-4a91-ad76-0ae3c7ed351c)
+
+  - **sekarang kita ke microservice 1, untuk langkah langkah sama dengan microservice2**
+  - start microservice1 dengan "sudo lxc-start -n microservice1"
+  - rubat ke root dengan "sudo lxc-attach -n microservice1"
+  - install nano "apt install nano"
+  - masuk kefile 10-lxc.yaml " sudo nano /etc/netplan/10-lxc.yaml"
+
+![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/1e799e53-2f37-47dc-b34b-430d6d600357)
+
+  - 
+- rubah file 10-lxc.yaml seperti dibawah
+
+![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/92920424-9d24-42a0-b040-dd525a909dcd)
+
+- kemudian refresh dengan "sudo netplan apply"
+- selanjutnya tes ping kegoogle.com
+- dan terakhir update microservice1 dan microservice2 dengan "apt upgrade -y"
+
+**MICROSERVICE ABOUTUS**
+-
 
 
 
