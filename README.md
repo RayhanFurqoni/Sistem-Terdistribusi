@@ -176,7 +176,8 @@ microservice 2 = sudo lxc-create -n microservice2 -t download -- --dist ubuntu -
 ![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/3b9afca3-5f31-47a6-8e1b-2be502bd4f47)
 
 **HASIL NYA**
-WEB SISTER.LOCAL
+
+- WEB SISTER.LOCAL
 
 ![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/21b36f79-55f4-4bd0-8cda-0894ecdac121)
 
