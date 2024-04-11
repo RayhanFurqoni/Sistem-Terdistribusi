@@ -125,7 +125,28 @@ microservice 2 = sudo lxc-create -n microservice2 -t download -- --dist ubuntu -
 
 ![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/459d4f7e-028e-44ce-b0fb-4361e9fda5db)
 
-- membuat file mcsv1.local dan merubah server name dan root
+-- membuat file mcsv2.local dan merubah server name dan root
+
+![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/b944c00a-ec9d-4999-9a7f-db0317210d01)
+
+
+- masuk ke folder /var/www/html kemudian copy index.html dengan " cp index.nginx-debian.html index html"
+- kemudian masuk ke file hosts dengan "sudo nano /etc/hosts" dan menambahkan hosts baru yaitu **mscv2.local**
+
+![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/b98c48d1-c562-404e-80f9-7b91d69f3bda)
+
+
+**MICROSERVICE BLOG**
+- install nginx dengan "sudo apt install nginx nginx-extras"
+- setelah menginstall, masuk ke folder var/www/html dan disana ada file index.nginx-debian.html
+- masuk ke file nya dan ganti isi blog sesuai yang diinginkan(microservice1)
+![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/f56b1b45-f0b4-4c69-931a-d5fd0d0931b8)
+- kemudian apt install curl
+- cek apakah sudah terganti dengan "curl localhost"
+  
+![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/4629ebe5-4ddf-4011-82bf-f149faf617c7)
+
+-- membuat file mcsv1.local dan merubah server name dan root
 
 ![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/ef3dc790-8010-40fb-9fa0-1ddde7d2de28)
 
@@ -139,26 +160,6 @@ microservice 2 = sudo lxc-create -n microservice2 -t download -- --dist ubuntu -
 - 
 
   ![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/c491dec0-fe14-4ad1-ad84-e0d90182e91f)
-**MICROSERVICE BLOG**
-- install nginx dengan "sudo apt install nginx nginx-extras"
-- setelah menginstall, masuk ke folder var/www/html dan disana ada file index.nginx-debian.html
-- masuk ke file nya dan ganti isi blog sesuai yang diinginkan(microservice1)
-![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/f56b1b45-f0b4-4c69-931a-d5fd0d0931b8)
-- kemudian apt install curl
-- cek apakah sudah terganti dengan "curl localhost"
-  
-![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/4629ebe5-4ddf-4011-82bf-f149faf617c7)
-
-- membuat file mcsv2.local dan merubah server name dan root
-
-![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/b944c00a-ec9d-4999-9a7f-db0317210d01)
-
-
-- masuk ke folder /var/www/html kemudian copy index.html dengan " cp index.nginx-debian.html index html"
-- kemudian masuk ke file hosts dengan "sudo nano /etc/hosts" dan menambahkan hosts baru yaitu **mscv2.local**
-
-![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/e911d0ce-736a-48aa-a790-d063d9192445)
-
 
 **kembali ke ubuntu utama**
 - masuk ke folder /etc/nginx/sites-enabled/
