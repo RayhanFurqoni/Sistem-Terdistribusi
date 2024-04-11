@@ -163,9 +163,29 @@ microservice 2 = sudo lxc-create -n microservice2 -t download -- --dist ubuntu -
 
 **kembali ke ubuntu utama**
 - masuk ke folder /etc/nginx/sites-enabled/
-- masuk kefile dan membuat link untuk ke microservice1 jika ingin kemenu blog, dan jika ingin ke aboutus link ke microservice2 dengan "sudo nano sister.local"
+- 
+- masuk kefile dan membuat link untuk ke microservice1 jika ingin kemenu blog, dan jika ingin ke aboutus link ke microservice2
+**Langkah 1**
+  - menambahkan mcsv1.local dan mcsv2.local yang sudah kita buat di /etc/hosts
+  
+  ![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/9860982f-ba40-4fc7-bb60-f5227c9f447b)
 
-![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/acf1606d-ce4d-4a9a-89b4-403931adf2af)
+**Langkah 2**
+- menambahkan link yang akan ditujukan di sister.local
+
+![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/3b9afca3-5f31-47a6-8e1b-2be502bd4f47)
+
+**HASIL NYA**
+
+WEB ABOUT US
+
+![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/21904d17-c96e-40bf-ab1a-c3c8270db4f9)
+
+WEB BLOG
+
+![image](https://github.com/RayhanFurqoni/Sistem-Terdistribusi/assets/124054176/59875e2b-098d-4861-8c2f-88e247b9cf1f)
+
+
 
 -  
 
